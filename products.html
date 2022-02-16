@@ -76,7 +76,7 @@
                 </div>
               </div>
             </div>
-            <template v-for="moreImage in detail.imagesUrl">
+            <template v-for="(moreImage, index) in detail.imagesUrl" :key="index">
               <img :src="moreImage" alt="" class="images m-2">
             </template>
           </template>
